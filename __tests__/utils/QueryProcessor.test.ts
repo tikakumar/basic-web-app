@@ -52,4 +52,9 @@ describe("QueryProcessor", () => {
     test('should check cube/square numbers', () => {
         expect(QueryProcessor("Which of the following numbers is both a square and a cube: 17, 64, 2, 4, 5, 78, 13?")).toEqual("64");
     });
+
+    test('should sub numbers', () => {
+        expect(QueryProcessor("What is 12 minus 7?")).toEqual("5");
+        expect(QueryProcessor("What is 87 minus 10?")).toEqual("77");
+    });
 });
