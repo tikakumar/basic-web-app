@@ -25,4 +25,12 @@ describe("QueryProcessor", () => {
             "krutikak"
           ));
     });
+
+    test('should answer name', () => {
+        const query = "name";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe((
+            "tika5"
+          ));
+    });
 });
